@@ -7,8 +7,12 @@ const Task = ({ taskText, onClick }) => {
     <List className='todo__list'>
       <ListItem>
         <ListItemText primary={taskText} />
+        <DeleteIcon
+          fontSize='large'
+          style={{ opacity: 0.7 }}
+          onClick={onClick}
+        />
       </ListItem>
-      <DeleteIcon fontSize='large' style={{ opacity: 0.7 }} onClick={onClick} />
     </List>
   )
 }
